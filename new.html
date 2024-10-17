@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News APP</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body> 
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="name" onclick="reload()">SHANi</a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="navItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="nature"onclick="navItemClick('nature')">Nature</li>
+                    <li class="hover-link nav-item" id="bird" onclick="navItemClick('bird')">Bird</li>
+                    <li class="hover-link nav-item" id="Crickrt" onclick="navItemClick('cricket')">Crickrt</li>
+                    <li class="hover-link nav-item" id="Car" onclick="navItemClick('car')">Car</li>
+                </ul>
+            </div>
+            <div class=" search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+        </div>
+    </main>
+    <template id="template-new-card">
+        <div class="card">
+            <card class="header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img" width="200px" height="200px">
+            </card>
+            <card class="content">
+                <h3 id="news-title" class="news-title">This is test</h3>
+                <h6 id="news-source" class="news-source">End Gadget 26/11/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio impedit,
+                    sit dolor architecto quae earum eveniet sed cupiditate molestias!</p>
+            </card>
+        </div>
+    </template>
+
+    <script src="news.js"></script>
+</body>
+
+</html>
